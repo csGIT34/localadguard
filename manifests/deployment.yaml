@@ -17,6 +17,10 @@ spec:
       labels:
         app.kubernetes.io/name: adguard-home
     spec:
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
+      nodeSelector:
+        kubernetes.io/hostname: k3s-worker-1
       containers:
         - name: adguard-home
           image: adguard/adguardhome:latest
