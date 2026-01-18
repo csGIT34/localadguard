@@ -34,12 +34,6 @@ spec:
             - name: http-initial
               containerPort: 3000
               protocol: TCP
-            - name: http
-              containerPort: 80
-              protocol: TCP
-            - name: https
-              containerPort: 443
-              protocol: TCP
             - name: dns-tls
               containerPort: 853
               protocol: TCP
